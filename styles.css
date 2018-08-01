@@ -1,7 +1,7 @@
 .portfolio-header {
     position: relative;
     /* background-image: url(images/header.png);*/
-    min-height: auto;
+    height: 500px;
 }
 
 .portfolio-header .mdl-layout__header-row {
@@ -18,14 +18,10 @@
 }
 
 .is-compact .mdl-layout__title span {
-    display: none;
+    display: max-content;
 }
 
 .portfolio-logo-row {
-    min-height: 452px;
-}
-
-.is-compact .portfolio-logo-row {
     min-height: auto;
 }
 
@@ -42,6 +38,10 @@
   background-color: rgba(0, 0, 0, 0.08);
   text-transform: uppercase;
   height: 48px;
+  position: absolute;
+  right: 0;
+  left: 0;
+  bottom: 0;
 }
 
 .portfolio-navigation-row  .mdl-navigation {
