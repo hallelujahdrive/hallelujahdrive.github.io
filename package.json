@@ -1,10 +1,10 @@
 {
-  "name": "elm-croppie-demo",
-  "version": "1.0.1",
-  "description": "Croppie For Elm Demo",
-  "main": "demo.js",
+  "name": "hallelujahdrive.github.io",
+  "version": "1.0.2",
+  "description": "hallelujahdrive.github.io",
   "scripts": {
-    "build": "rollup -c"
+    "build-elm-accordion": "cd elm-accordion && rollup -c",
+    "build-elm-croppie": "cd elm-croppie && rollup -c"
   },
   "author": "hallelujahdrive <hallelujahdrive@52hertz-reunion.site>",
   "license": "MIT",
@@ -13,8 +13,10 @@
     "@rollup/plugin-node-resolve": "^9.0.0",
     "@rollup/plugin-typescript": "^5.0.2",
     "@types/sweetalert": "^2.0.4",
-    "elm-croppie": "^1.0.2",
+    "elm-accordion": "^1.0.1",
+    "elm-croppie": "^1.0.3",
     "rollup-plugin-elm": "^2.0.2",
+    "rollup-plugin-scss": "^2.6.0",
     "rollup-plugin-terser": "^7.0.0",
     "sweetalert": "^2.1.2",
     "tslib": "^2.0.1",
