@@ -4,12 +4,12 @@ import Accordion
 import Accordion.List as AccordionList
 import Browser
 import Html exposing (Html, text)
-import Html.Attributes exposing (checked, class, href, id, rel, target, type_)
+import Html.Attributes exposing (checked, class, for, href, id, rel, target, type_)
 import Html.Events exposing (onCheck, onClick)
 
 
 version =
-    "1.0.2"
+    "1.0.3"
 
 
 main : Program () Model Msg
@@ -776,13 +776,15 @@ codeAccordion status example id_ label lang code =
 
 toggleSwitch : Bool -> Html Msg
 toggleSwitch open =
-    Html.label [ class "toggle-switch" ]
+    Html.div [ class "toggle-switch" ]
         [ Html.input
             [ checked open
+            , id "toggle-switch"
             , type_ "checkbox"
             , onCheck (\_ -> SwitchToggled)
             ]
             []
+        , Html.label [ for "toggle-switch" ] []
         , Html.span [] []
         ]
 
