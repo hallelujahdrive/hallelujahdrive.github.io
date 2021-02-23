@@ -3,7 +3,7 @@
   "version": "1.0.2",
   "description": "hallelujahdrive.github.io",
   "scripts": {
-    "build-elm-accordion": "cd elm-accordion && rollup -c",
+    "build-elm-accordion": "cd elm-accordion && make build",
     "build-elm-croppie": "cd elm-croppie && rollup -c"
   },
   "author": "hallelujahdrive <hallelujahdrive@52hertz-reunion.site>",
@@ -13,7 +13,7 @@
     "@rollup/plugin-node-resolve": "^9.0.0",
     "@rollup/plugin-typescript": "^5.0.2",
     "@types/sweetalert": "^2.0.4",
-    "elm-accordion": "^1.0.3",
+    "elm-accordion": "^1.0.4",
     "elm-croppie": "^1.0.3",
     "rollup-plugin-elm": "^2.0.2",
     "rollup-plugin-scss": "^2.6.0",
